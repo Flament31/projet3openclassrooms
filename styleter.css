@@ -1,0 +1,153 @@
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1,h2
+{
+	text-align: center;
+}
+
+h1
+{
+	margin: 40px 0px 20px 0px;
+}
+
+#title, footer
+{
+	background-color: mediumseagreen;
+	color: yellow;
+	padding: 15px;
+	font-size: 1.5em;
+}
+
+main
+{
+	background-color: mintcream;
+	margin: 0px 70px 70px 70px;
+	padding: 25px;
+	font-family: "blokletters_balpenbalpen";
+}
+
+header
+{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+header h1
+{
+	margin: 15px 0px 15px 0px;
+}
+
+#color1
+{
+	color: chocolate;
+}
+
+#color2
+{
+	color: mediumorchid;
+}
+
+#color3
+{
+	color: mediumslateblue;
+}
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+    position: static;
+}
+
+footer p
+{
+	margin: 0px;
+}
+
+.fab
+{
+	font-size: 4em;
+}
+
+#end_title
+{
+	display: flex;
+	justify-content: center;
+}
+
+.bouton
+{
+	padding: 10px 30px;
+	color: yellow;
+	text-decoration: none;
+}
+
+.bouton:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media all and (min-width: 576px)
+{
+    body
+	{
+		margin: 0px 10% 0px 10%;
+	}
+
+	main
+	{
+	    padding: 50px;
+	}
+
+	.plats
+	{
+		margin-left: 5%;
+	}
+}
+
+@media all and (min-width: 992px)
+{
+	body
+	{
+		margin: 0px 15% 0px 15%;
+	}
+
+	.plats
+	{
+		margin-left: 10%;
+	}	
+}
+
+@media all and (min-width: 1200px)
+{
+	body
+	{
+		max-width: 800px;
+		margin: 0px 20% 0px 20%;
+	}
+}
