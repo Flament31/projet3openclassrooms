@@ -27,9 +27,36 @@ h1
 	margin: 40px 0px 20px 0px;
 }
 
-h2:hover
+h2
 {
-	text-decoration: underline;
+	margin: 0px;
+}
+
+.title-plats
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container_soulign 
+{
+ align-items:center;
+ justify-content:center;
+ margin: 0px;
+}
+
+.container_soulign div 
+{
+ width:0%;
+ height:2px;
+ background-color:black;
+ margin: 0px;
+}
+
+.container_soulign:hover div 
+{
+ width:100%;
+ transition:all 500ms;
 }
 
 div
@@ -44,12 +71,14 @@ table
 
 .prix1
 {
-	padding: 5px 5px 5px 83px;
+	padding: 5px 5px 5px 98px;
+	font-weight: bold; 
 }
 
 .prix2
 {
-	padding: 5px 5px 5px 105px;
+	padding: 5px 5px 5px 120px;
+	font-weight: bold;
 }
 
 #title, footer
@@ -62,12 +91,20 @@ table
 
 main
 {
-	background-color: pink;
-	margin: 0px auto 70px auto;
+	margin: 0px auto 100px auto;
 	padding: 10px;
-	color: darkred;
+}
+
+#principal
+{
+	margin: 0px 40px 0px 40px; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #3d1319;
 	font-family: "blokletters_balpenbalpen";
 	font-size: 0.7em;
+	background-color: #fcdfdb;
 }
 
 header
@@ -81,27 +118,44 @@ header h1
 }
 
 footer
-{
+{  
 	display: flex;
 	justify-content: space-between;
-    position: static;
+    position: fixed;
+    margin: 0px;
     padding: 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-footer p
+img
 {
-	margin: 0px;
+	width: 30%;
+	height: 40%;
+	margin: 5px 0px 0px 0px;
+}
+
+#title-main
+{
+	margin-bottom: 50px;
+	margin: 30px 0px 20px 0px;
 }
 
 .fab
 {
-	font-size: 4em;
+	font-size: 5em;
+	margin: 0px 5px 0px 5px;
+	background:linear-gradient(86deg, #f05060 30%, #f6916a 62%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
 }
 
 #end_title
 {
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 .bouton
@@ -138,7 +192,7 @@ footer p
 
 @media all and (min-width: 576px)
 {
-    body
+    body, footer
 	{
 		margin: 0px 10% 0px 10%;
 	}
@@ -147,21 +201,41 @@ footer p
 	{
 	    padding: 50px;
 	}
+
+	footer
+	{
+		width: 80%;
+	}
+
+	#principal
+	{
+	    padding: 20px;
+	}
 }
 
 @media all and (min-width: 992px)
 {
-	body
+	body, footer
 	{
 		margin: 0px 15% 0px 15%;
+	}
+
+	footer
+	{
+		width: 70%;
 	}
 }
 
 @media all and (min-width: 1200px)
 {
-	body
+	body, footer
 	{
 		max-width: 800px;
 		margin: 0px 20% 0px 20%;
+	}
+
+	footer
+	{
+		width: 60%;
 	}
 }

@@ -7,9 +7,9 @@ body
 
 main
 {
-	margin: auto;
+	margin: 0px auto 100px auto;
+	padding: 10px;
 }
-
 
 #title, footer, #prochainement
 {
@@ -23,7 +23,6 @@ header h1
 {
 	margin: 15px 0px 15px 0px;
 }
-
 
 h1
 {
@@ -46,17 +45,15 @@ header
 }
 
 footer
-{
+{  
 	display: flex;
 	justify-content: space-between;
-    position: static;
-    margin-top: 25px;
+    position: fixed;
+    margin: 0px;
     padding: 0px;
-}
-
-footer p
-{
-	margin: 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 #end_title
@@ -111,13 +108,8 @@ footer p
   }
 }
 
-.menu 
+.menu
 {
-
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
     margin: 10px;
 	padding: 150px 50px 150px 50px;
 	background-color: pink;
@@ -126,17 +118,29 @@ footer p
 	text-align: center;
 }
 
-.menu:hover 
+.bouton-menu
 {
-    transform: scale(1.15);
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
 }
 
+.bouton-menu:hover 
+{
+    transform: scale(1.35);
+}
 
 @media all and (min-width: 576px)
 {
-    body
+    body, footer
 	{
 		margin: 0px 10% 0px 10%;
+	}
+
+	footer
+	{
+		width: 80%;
 	}
 
 	#principal
@@ -152,9 +156,14 @@ footer p
 
 @media all and (min-width: 992px)
 {
-	body
+	body, footer
 	{
 		margin: 0px 15% 0px 15%;
+	}
+
+	footer
+	{
+		width: 70%;
 	}
 
 	#prochainement
@@ -165,10 +174,15 @@ footer p
 
 @media all and (min-width: 1200px)
 {
-	body
+	body, footer
 	{
 		max-width: 800px;
 		margin: 0px 20% 0px 20%;
+	}
+
+	footer
+	{
+		width: 60%;
 	}
 
 	.menu
