@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'blokletters_balpenbalpen';
+    src: url('fonts/Blokletters-Balpen-webfont.eot');
+    src: url('fonts/Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Blokletters-Balpen-webfont.woff2') format('woff2'),
+         url('fonts/Blokletters-Balpen-webfont.woff') format('woff'),
+         url('fonts/Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('fonts/Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
 	display: flex;
@@ -18,11 +30,12 @@ h1
 h2
 {
 	margin: 0px;
+	font-size: 1.1em;
 }
 
 .plats
 {
-	margin: 0px 70px 0px 70px;
+	margin: 0px 40px 0px 40px;
 }
 
 .title-plats
@@ -64,13 +77,19 @@ table
 
 .prix1
 {
-	padding: 5px 5px 5px 160px;
+	padding: 5px 0px 5px 100px;
 	font-size: 1em; 
 }
 
 .prix2
 {
-	padding: 5px 5px 5px 50px;
+	padding: 5px 0px 5px 30px;
+	font-size: 1em; 
+}
+
+.prix3
+{
+	padding: 5px 0px 5px 45px;
 	font-size: 1em; 
 }
 
@@ -95,7 +114,8 @@ main
 	flex-wrap: wrap;
 	justify-content: center;
 	font-family: "blokletters_balpenbalpen";
-	font-size: 0.85em;
+	font-size: 0.65em;
+	font-weight: bold;
 }
 
 header
@@ -131,10 +151,10 @@ img
 {
 	margin-bottom: 50px;
 	margin: 60px 0px 60px 0px;
-	background:#e38a12;
-    background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
+	background:linear-gradient(165deg, #3d923a 16%, #beff7f 82%);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    font-size: 3.5em;
 }
 
 #end_title
@@ -156,21 +176,6 @@ img
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
-
-#color1
-{
-	color: chocolate;
-}
-
-#color2
-{
-	color: mediumorchid;
-}
-
-#color3
-{
-	color: mediumslateblue;
 }
 
 @keyframes shake {

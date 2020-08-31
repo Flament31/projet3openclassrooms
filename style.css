@@ -30,6 +30,16 @@ h1
 	text-align: center;
 }
 
+h3
+{
+	font-size: 1.1em;
+}
+
+a
+{
+	text-decoration: none;
+}
+
 header
 {
 	text-align: center;
@@ -42,6 +52,25 @@ header
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.fab
+{
+	font-size: 3em;
+	background:linear-gradient(86deg, #f05060 30%, #f6916a 62%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+#menu1 .boutou-menu
+{
+	background-color: #fcdfdb;
+	color: #3d1319;
+}
+
+#menu3
+{
+	background-color: #edefef;
 }
 
 footer
@@ -80,7 +109,6 @@ footer
 {
 	padding: 10px 30px;
 	color: yellow;
-	text-decoration: none;
 }
 
 .bouton:hover {
@@ -111,10 +139,10 @@ footer
 .menu
 {
     margin: 10px;
-	padding: 150px 50px 150px 50px;
-	background-color: pink;
+	padding: 150px 50px 200px 50px;
 	width: 140px;
 	height: 15px;
+	border: 1px black solid;
 	text-align: center;
 }
 
@@ -187,6 +215,6 @@ footer
 
 	.menu
 	{
-		padding: 150px 67px 150px 67px;
+		padding: 150px 67px 200px 67px;
 	}
 }
