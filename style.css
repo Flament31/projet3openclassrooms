@@ -62,15 +62,57 @@ header
     -webkit-text-fill-color:transparent
 }
 
-#menu1 .boutou-menu
+#menu1 
 {
 	background-color: #fcdfdb;
-	color: #3d1319;
 }
 
 #menu3
 {
 	background-color: #edefef;
+}
+
+#title-menu1
+{
+	color: #3d1319;
+}
+
+#title-menu2 h3
+{
+	background:#e38a12;
+    background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+#title-menu2 h2
+{
+	color: #e38a12;
+}
+
+#title-menu3 h3
+{
+	background:#e38a12;
+    background:linear-gradient(165deg, #0022db 16%, #0889fb 82%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+#title-menu3 h2
+{
+	color: #0889fb;
+}
+
+#title-menu4 h3
+{
+	background:linear-gradient(165deg, #3d923a 16%, #beff7f 82%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+#title-menu4 h2
+{
+	color: #3d923a;
 }
 
 footer
