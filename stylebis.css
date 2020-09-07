@@ -10,6 +10,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'zhi_mang_xingregular';
+    src: url('fonts/zhimangxing-regular-webfont.eot');
+    src: url('fonts/zhimangxing-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/zhimangxing-regular-webfont.woff2') format('woff2'),
+         url('fonts/zhimangxing-regular-webfont.woff') format('woff'),
+         url('fonts/zhimangxing-regular-webfont.svg#zhi_mang_xingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
 	display: flex;
@@ -140,6 +151,8 @@ img
 {
 	margin-bottom: 50px;
 	margin: 30px 0px 20px 0px;
+	font-family: 'zhi_mang_xingregular';
+	font-size: 1.7em;
 }
 
 .fab
