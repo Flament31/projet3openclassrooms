@@ -206,11 +206,6 @@ footer
 	justify-content: center;
 }
 
-#prochainement p
-{
-	margin: 10px;
-}
-
 .bouton
 {
 	padding: 10px 30px;
@@ -306,7 +301,7 @@ footer
 {
 	text-align: center;
 	display: flex;
-	align-items: center
+	align-items: center;
 	margin: 10px;
 }
 
