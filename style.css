@@ -69,10 +69,11 @@ main
 
 #title, footer, #prochainement
 {
-	background-color: mediumseagreen;
-	color: yellow;
+	background-color: #579C87;
+	color: #FDCB46;
 	padding: 15px;
 	font-size: 1.5em;
+	font-family: sans-serif;
 }
 
 header h1
@@ -84,6 +85,11 @@ h1
 {
 	margin: 40px 0px 20px 0px;
 	text-align: center;
+}
+
+h2
+{
+	margin-bottom: 135px;
 }
 
 h3
@@ -103,7 +109,7 @@ header
 
 #principal
 {
-	margin: 0px 40px 0px 40px;
+	margin: 0 ;
 	color: darkred;
 	display: flex;
 	flex-wrap: wrap;
@@ -143,6 +149,7 @@ header
 #title-menu1 h2
 {
 	font-family: 'blokletters_balpenbalpen';
+	margin-bottom: 90px;
 }
 
 #title-menu2 h3
@@ -152,6 +159,7 @@ header
     background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    font-size: 1.05em;
 }
 
 #title-menu2 h2
@@ -165,7 +173,8 @@ header
 	background:#e38a12;
     background:linear-gradient(165deg, #0022db 16%, #0889fb 82%);
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;  
+    font-size: 1.5em;
 }
 
 #title-menu3 h2
@@ -180,6 +189,7 @@ header
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     font-family: 'kaushan_scriptregular';
+    font-size: 1.5em;
 }
 
 #title-menu4 h2
@@ -245,16 +255,22 @@ footer
 
 .menu
 {
-    margin: 10px;
-	padding: 150px 50px 200px 50px;
-	width: 140px;
-	height: 15px;
-	border: 1px black solid;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+    margin: 15px;
+	width: 270px;
+	height: 370px;
+	box-shadow: 0 0 20px grey;
 }
 
 .bouton-menu 
-{
+{ 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 270px;
+	height: 370px;
+	text-align: center;
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
@@ -396,10 +412,5 @@ footer
 	footer
 	{
 		width: 60%;
-	}
-
-	.menu
-	{
-		padding: 150px 61px 200px 61px;
 	}
 }

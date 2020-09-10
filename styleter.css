@@ -31,9 +31,20 @@ h2
 	margin: 0px;
 }
 
+a
+{
+	text-decoration: none;
+	color: #FDCB46;
+}
+
 .plats
 {
 	margin: 25px 70px 50px 70px;
+}
+
+#title-black
+{
+	font-family: sans-serif;
 }
 
 .title-plats
@@ -88,10 +99,10 @@ table
 
 #title, footer
 {
-	background-color: mediumseagreen;
-	color: yellow;
+	background-color: #579C87;
 	padding: 15px;
 	font-size: 1.5em;
+	font-family: sans-serif;
 }
 
 main
@@ -108,6 +119,7 @@ main
 	justify-content: center;
 	font-family: "blokletters_balpenbalpen";
 	font-size: 0.85em;
+	box-shadow: 0 0 20px grey;
 }
 
 header
@@ -160,8 +172,6 @@ img
 .bouton
 {
 	padding: 10px 30px;
-	color: yellow;
-	text-decoration: none;
 }
 
 .bouton:hover {
