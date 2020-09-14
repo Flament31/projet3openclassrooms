@@ -331,7 +331,7 @@ footer
 
 #prochainement p .loader_dot
 {
-	background-color: yellow;
+	background-color: #FDCB46;
 	border-radius: 8px;
 	display: block;
 	width: 0.4vw;
