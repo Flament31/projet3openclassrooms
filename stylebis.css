@@ -93,13 +93,13 @@ a
 
 .prix1
 {
-	padding: 5px 5px 5px 88px;
+	padding: 5px 5px 5px 10px;
 	font-weight: bold; 
 }
 
 .prix2
 {
-	padding: 5px 5px 5px 110px;
+	padding: 5px 5px 5px 10px;
 	font-weight: bold;
 }
 
@@ -227,7 +227,7 @@ img
 
 @media all and (min-width: 576px)
 {
-    body, footer
+	body, footer
 	{
 		margin: 0px 10% 0px 10%;
 	}
@@ -259,6 +259,16 @@ img
 	{
 		width: 70%;
 	}
+
+	.prix1
+    {
+	    padding: 5px 5px 5px 88px; 
+    }
+
+    .prix2
+    {
+	    padding: 5px 5px 5px 110px;
+    }
 }
 
 @media all and (min-width: 1200px)

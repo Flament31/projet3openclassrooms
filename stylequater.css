@@ -53,7 +53,7 @@ a
 
 .plats
 {
-	margin: 0px 70px 0px 70px;
+	margin: 0px 40px 0px 40px;
 }
 
 #title-black
@@ -107,13 +107,13 @@ table
 
 .prix2
 {
-	padding: 5px 5px 5px 45px;
+	padding: 5px;
 	font-size: 1em; 
 }
 
 .prix3
 {
-	padding: 5px 5px 5px 210px;
+	padding: 5px;
 	font-size: 1em; 
 }
 
@@ -261,6 +261,22 @@ img
 	{
 		width: 70%;
 	}
+
+	.prix1
+    {
+	    padding: 5px 0px 5px 0px;
+ 
+    }
+
+    .prix2
+    {
+	    padding: 5px 5px 5px 45px;
+    }
+
+    .prix3
+    {
+	    padding: 5px 5px 5px 210px; 
+    }
 }
 
 @media all and (min-width: 1200px)
@@ -275,4 +291,9 @@ img
 	{
 		width: 60%;
 	}
+
+    .plats
+    {
+	    margin: 0px 70px 0px 70px;
+    }
 }

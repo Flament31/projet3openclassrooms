@@ -37,11 +37,6 @@ a
 	color: #FDCB46;
 }
 
-.plats
-{
-	margin: 25px 70px 50px 70px;
-}
-
 #title-black
 {
 	font-family: sans-serif;
@@ -79,6 +74,11 @@ div
 	margin: 10px;
 }
 
+.plats
+{
+	margin: 25px 40px 50px 40px;
+}
+
 table
 {
 	text-align: left;
@@ -87,13 +87,13 @@ table
 
 .prix1
 {
-	padding: 5px 5px 5px 160px;
+	padding: 5px 5px 5px 10px;
 	font-size: 1em; 
 }
 
 .prix2
 {
-	padding: 5px 5px 5px 50px;
+	padding: 5px 5px 5px 10px;
 	font-size: 1em; 
 }
 
@@ -254,6 +254,16 @@ img
 	{
 		width: 70%;
 	}
+
+	.prix1
+    {
+	    padding: 5px 5px 5px 160px;
+    }
+
+    .prix2
+    {
+	    padding: 5px 5px 5px 50px;
+	}
 }
 
 @media all and (min-width: 1200px)
@@ -268,4 +278,9 @@ img
 	{
 		width: 60%;
 	}
+
+	.plats
+    {
+	    margin: 25px 70px 50px 70px;
+    }
 }

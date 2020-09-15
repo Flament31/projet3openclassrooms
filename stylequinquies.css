@@ -100,19 +100,19 @@ table
 
 .prix1
 {
-	padding: 5px 0px 5px 100px;
+	padding: 5px 0px 5px 10px;
 	font-size: 1em; 
 }
 
 .prix2
 {
-	padding: 5px 0px 5px 30px;
+	padding: 5px 0px 5px 10px;
 	font-size: 1em; 
 }
 
 .prix3
 {
-	padding: 5px 0px 5px 45px;
+	padding: 5px 0px 5px 10px;
 	font-size: 1em; 
 }
 
@@ -259,6 +259,21 @@ img
 	{
 		width: 70%;
 	}
+
+	.prix1
+    {
+	    padding: 5px 0px 5px 100px; 
+    }
+
+    .prix2
+    {
+	    padding: 5px 0px 5px 30px;
+    }
+
+    .prix3
+    {
+	    padding: 5px 0px 5px 45px; 
+    }
 }
 
 @media all and (min-width: 1200px)
