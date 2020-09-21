@@ -14,6 +14,74 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	text-align: center;
+}
+
+header h1
+{
+	margin: 15px 0px 15px 0px;
+}
+
+main
+{
+	margin: 0px auto 100px auto;
+	padding: 10px;
+}
+
+#title-main
+{
+	margin-bottom: 50px;
+	margin: 60px 0px 60px 0px;
+	background:#e38a12;
+    background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-family: 'croissant_oneregular';
+}
+
+#title-black
+{
+	font-family: sans-serif;
+}
+
+#principal
+{
+	margin: 0px 40px 0px 40px; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: "blokletters_balpenbalpen";
+	font-size: 0.85em;
+	box-shadow: 0 0 20px grey;
+}
+
+#title, footer
+{
+	background-color: #579C87;
+	padding: 15px;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
+
+#color1
+{
+	color: chocolate;
+}
+
+#color2
+{
+	color: mediumorchid;
+}
+
+#color3
+{
+	color: mediumslateblue;
 }
 
 h1,h2
@@ -37,15 +105,33 @@ a
 	color: #FDCB46;
 }
 
-#title-black
+img
 {
-	font-family: sans-serif;
+	width: 30%;
+	height: 40%;
+	margin: 5px 0px 0px 0px;
+}
+
+div
+{
+	margin: 10px;
 }
 
 .title-plats
 {
 	display: flex;
 	justify-content: space-between;
+}
+
+.plats
+{
+	margin: 25px 40px 50px 40px;
+}
+
+table
+{
+	text-align: left;
+	margin: 25px 0px 50px 0px; 
 }
 
 .container_soulign 
@@ -69,22 +155,6 @@ a
     transition:all 500ms;
 }
 
-div
-{
-	margin: 10px;
-}
-
-.plats
-{
-	margin: 25px 40px 50px 40px;
-}
-
-table
-{
-	text-align: left;
-	margin: 25px 0px 50px 0px; 
-}
-
 .prix1
 {
 	padding: 5px 5px 5px 10px;
@@ -97,39 +167,11 @@ table
 	font-size: 1em; 
 }
 
-#title, footer
+#end_title
 {
-	background-color: #579C87;
-	padding: 15px;
-	font-size: 1.5em;
-	font-family: sans-serif;
-}
-
-main
-{
-	margin: 0px auto 100px auto;
-	padding: 10px;
-}
-
-#principal
-{
-	margin: 0px 40px 0px 40px; 
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	font-family: "blokletters_balpenbalpen";
-	font-size: 0.85em;
-	box-shadow: 0 0 20px grey;
-}
-
-header
-{
-	text-align: center;
-}
-
-header h1
-{
-	margin: 15px 0px 15px 0px;
+	margin-top: 50px;
 }
 
 footer
@@ -137,36 +179,10 @@ footer
 	display: flex;
 	justify-content: space-between;
     position: fixed;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     bottom: 0;
-    left: 0;
     width: 100%;
-}
-
-img
-{
-	width: 30%;
-	height: 40%;
-	margin: 5px 0px 0px 0px;
-}
-
-#title-main
-{
-	margin-bottom: 50px;
-	margin: 60px 0px 60px 0px;
-	background:#e38a12;
-    background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    font-family: 'croissant_oneregular';
-}
-
-#end_title
-{
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
 }
 
 .bouton
@@ -180,21 +196,6 @@ img
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-}
-
-#color1
-{
-	color: chocolate;
-}
-
-#color2
-{
-	color: mediumorchid;
-}
-
-#color3
-{
-	color: mediumslateblue;
 }
 
 @keyframes shake 
@@ -224,7 +225,8 @@ img
 {
     body, footer
 	{
-		margin: 0px 10% 0px 10%;
+		margin: 0px auto 0px auto;
+		max-width: 700px;
 	}
 
 	main
@@ -232,27 +234,9 @@ img
 	    padding: 50px;
 	}
 
-	footer
-	{
-		width: 80%;
-	}
-
 	#principal
 	{
 	    padding: 20px 20px 100px 20px;
-	}
-}
-
-@media all and (min-width: 992px)
-{
-	body, footer
-	{
-		margin: 0px 15% 0px 15%;
-	}
-
-	footer
-	{
-		width: 70%;
 	}
 
 	.prix1
@@ -266,17 +250,19 @@ img
 	}
 }
 
+@media all and (min-width: 992px)
+{
+	body, footer
+	{
+		max-width: 750px;
+	}	
+}
+
 @media all and (min-width: 1200px)
 {
 	body, footer
 	{
 		max-width: 800px;
-		margin: 0px 20% 0px 20%;
-	}
-
-	footer
-	{
-		width: 60%;
 	}
 
 	.plats

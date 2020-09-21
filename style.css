@@ -59,12 +59,24 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 main
 {
 	margin: 0px auto 100px auto;
 	padding: 10px;
+}
+
+header
+{
+	text-align: center;
+}
+
+header h1
+{
+	margin: 15px 0px 15px 0px;
 }
 
 #title, footer, #prochainement
@@ -76,11 +88,6 @@ main
 	font-family: sans-serif;
 }
 
-header h1
-{
-	margin: 15px 0px 15px 0px;
-}
-
 h1
 {
 	margin: 40px 0px 20px 0px;
@@ -89,12 +96,12 @@ h1
 
 h2
 {
-	margin-bottom: 135px;
+	font-size: 1.1em;
 }
 
 h3
 {
-	font-size: 1.1em;
+	margin-bottom: 135px;
 }
 
 a
@@ -102,9 +109,12 @@ a
 	text-decoration: none;
 }
 
-header
+.fab
 {
-	text-align: center;
+	font-size: 3em;
+	background:linear-gradient(86deg, #f05060 30%, #f6916a 62%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
 }
 
 #principal
@@ -116,12 +126,14 @@ header
 	justify-content: center;
 }
 
-.fab
+.menu
 {
-	font-size: 3em;
-	background:linear-gradient(86deg, #f05060 30%, #f6916a 62%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent
+	display: flex;
+	justify-content: center;
+    margin: 15px;
+	width: 270px;
+	height: 370px;
+	box-shadow: 0 0 20px grey;
 }
 
 #menu1 
@@ -139,20 +151,20 @@ header
 	color: #3d1319;	
 }
 
-#title-menu1 h3
+#title-menu1 h2
 {
 	font-family: 'zhi_mang_xingregular';
 	font-size: 1.5em;
 	margin-top: 0;
 }
 
-#title-menu1 h2
+#title-menu1 h3
 {
 	font-family: 'blokletters_balpenbalpen';
 	margin-bottom: 90px;
 }
 
-#title-menu2 h3
+#title-menu2 h2
 {
 	font-family: 'croissant_oneregular';
 	background:#e38a12;
@@ -162,12 +174,12 @@ header
     font-size: 1.05em;
 }
 
-#title-menu2 h2
+#title-menu2 h3
 {
 	color: #e38a12;
 }
 
-#title-menu3 h3
+#title-menu3 h2
 {
 	font-family: 'dancing_script_otregular';
 	background:#e38a12;
@@ -177,13 +189,13 @@ header
     font-size: 1.5em;
 }
 
-#title-menu3 h2
+#title-menu3 h3
 {
 	color: #0889fb;
 	font-family: 'blokletters_balpenbalpen';
 }
 
-#title-menu4 h3
+#title-menu4 h2
 {
 	background:linear-gradient(165deg, #3d923a 16%, #beff7f 82%);
     -webkit-background-clip:text;
@@ -192,75 +204,10 @@ header
     font-size: 1.5em;
 }
 
-#title-menu4 h2
+#title-menu4 h3
 {
 	color: #3d923a;
 	font-family: 'blokletters_balpenbalpen';
-}
-
-footer
-{  
-	display: flex;
-	justify-content: space-between;
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-#end_title
-{
-	display: flex;
-	justify-content: center;
-}
-
-.bouton
-{
-	padding: 10px 30px;
-	color: #FDCB46;
-}
-
-.bouton:hover 
-{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
-
-@keyframes shake 
-{
-    10%, 90% 
-    {
-        transform: translate3d(-1px, 0, 0);
-    }
-
-    20%, 80% 
-    {
-        transform: translate3d(2px, 0, 0);
-    }
-
-    30%, 50%, 70% 
-    {
-        transform: translate3d(-4px, 0, 0);
-    } 
-
-    40%, 60% 
-    {
-        transform: translate3d(4px, 0, 0);
-    }
-}
-
-.menu
-{
-	display: flex;
-	justify-content: center;
-    margin: 15px;
-	width: 270px;
-	height: 370px;
-	box-shadow: 0 0 20px grey;
 }
 
 .bouton-menu 
@@ -364,17 +311,60 @@ footer
     }
 }
 
+footer
+{  
+	display: flex;
+	justify-content: space-between;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bouton
+{
+	padding: 10px 30px;
+	color: #FDCB46;
+}
+
+.bouton:hover 
+{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake 
+{
+    10%, 90% 
+    {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% 
+    {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% 
+    {
+        transform: translate3d(-4px, 0, 0);
+    } 
+
+    40%, 60% 
+    {
+        transform: translate3d(4px, 0, 0);
+    }
+}
 
 @media all and (min-width: 576px)
 {
     body, footer
 	{
-		margin: 0px 10% 0px 10%;
-	}
-
-	footer
-	{
-		width: 80%;
+		max-width: 700px;
+		margin: 0px auto 0px auto;
 	}
 
 	#principal
@@ -392,12 +382,7 @@ footer
 {
 	body, footer
 	{
-		margin: 0px 15% 0px 15%;
-	}
-
-	footer
-	{
-		width: 70%;
+		max-width: 750px;
 	}
 }
 
@@ -406,11 +391,5 @@ footer
 	body, footer
 	{
 		max-width: 800px;
-		margin: 0px 20% 0px 20%;
-	}
-
-	footer
-	{
-		width: 60%;
 	}
 }
