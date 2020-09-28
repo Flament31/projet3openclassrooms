@@ -21,6 +21,39 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('fonts/croissantone-regular-webfont.eot');
+    src: url('fonts/croissantone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/croissantone-regular-webfont.woff2') format('woff2'),
+         url('fonts/croissantone-regular-webfont.woff') format('woff'),
+         url('fonts/croissantone-regular-webfont.svg#croissant_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing_script_otregular';
+    src: url('fonts/dancingscript-regular-webfont.eot');
+    src: url('fonts/dancingscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dancingscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/dancingscript-regular-webfont.woff') format('woff'),
+         url('fonts/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('fonts/kaushanscript-regular-webfont.eot');
+    src: url('fonts/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/kaushanscript-regular-webfont.woff') format('woff'),
+         url('fonts/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
 	display: flex;
@@ -54,16 +87,69 @@ main
 	font-size: 1.7em;
 }
 
-#principal
+#title-main2
+{
+	background:#e38a12;
+    background:linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
+    font-family: 'croissant_oneregular';
+}
+
+#title-main3
+{	
+	background:#e38a12;
+    background:linear-gradient(165deg, #0022db 16%, #0889fb 82%);
+    font-size: 4.5em;
+    font-family: 'dancing_script_otregular';
+}
+
+#title-main4
+{
+	background:linear-gradient(165deg, #3d923a 16%, #beff7f 82%);
+    font-size: 4.5em;
+    font-family: 'kaushan_scriptregular';
+}
+
+#title-main2, #title-main3, #title-main4
+{
+	margin-bottom: 50px;
+	margin: 60px 0px 60px 0px;
+	-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+#principal1
+{
+	color: #3d1319;
+	background-color: #fcdfdb;
+	font-family: "blokletters_balpenbalpen";
+	font-size: 0.7em;
+}
+
+#principal2
+{
+	font-size: 0.85em;
+}
+
+#principal3
+{
+	font-family: 'blokletters_balpenbalpen';
+	font-size: 0.65em;
+	background-color: #edefef;	
+}
+
+#principal4
+{	
+	font-family: "blokletters_balpenbalpen";
+	font-size: 0.65em;
+	font-weight: bold;
+}
+
+#principal1, #principal2, #principal3, #principal4
 {
 	margin: 0px 40px 0px 40px; 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	color: #3d1319;
-	font-family: "blokletters_balpenbalpen";
-	font-size: 0.7em;
-	background-color: #fcdfdb;
 	box-shadow: 0 0 20px grey;
 }
 
@@ -89,6 +175,18 @@ h2
 {
 	margin: 0px;
 }
+
+#principal3 h2
+{
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+#principal4 h2
+{
+	font-size: 1.1em;
+}
+
 img
 {
 	width: 30%;
@@ -100,6 +198,21 @@ a
 {
 	text-decoration: none;
 	color: #FDCB46;
+}
+
+#color1
+{
+	color: chocolate;
+}
+
+#color2
+{
+	color: mediumorchid;
+}
+
+#color3
+{
+	color: mediumslateblue;
 }
 
 .fab
@@ -127,21 +240,56 @@ div
 	justify-content: space-between;
 }
 
+.plats2
+{
+	margin: 25px 40px 50px 40px;
+}
+
+.plats3, .plats4
+{
+	margin: 0px 40px 0px 40px;
+}
+
 table
 {
 	text-align: left;
 }
 
-.prix1
+.plats2 table, .plats3 table, .plats4 table
+{
+	text-align: left;
+	margin: 25px 0px 50px 0px; 
+}
+
+.prix1, .prix2
 {
 	padding: 5px 5px 5px 10px;
 	font-weight: bold; 
 }
 
-.prix2
+.prix1-2, .prix2-2
 {
-	padding: 5px 5px 5px 10px;
-	font-weight: bold;
+	padding: 5px 5px 5px 10px; 
+}
+
+.prix1-3
+{
+	padding: 5px 0px 5px 0px; 
+}
+
+.prix2-3, .prix3-3
+{
+	padding: 5px;
+}
+
+.prix1-4, .prix2-4, .prix3-4
+{
+	padding: 5px 0px 5px 10px; 
+}
+
+.prix1-2, .prix2-2, .prix1-3, .prix2-3, .prix3-3, .prix1-4, .prix2-4, .prix3-4
+{
+	font-size: 1em;
 }
 
 .container_soulign 
@@ -238,10 +386,55 @@ footer
 	    padding: 50px;
 	}
 
-	#principal
+	#principal1
 	{
 	    padding: 20px;
 	}
+
+	#principal2, #principal3, .principal4
+	{
+	    padding: 20px 20px 100px 20px;
+	}
+
+	.prix1-2
+    {
+	    padding: 5px 5px 5px 160px;
+    }
+
+    .prix2-2
+    {
+	    padding: 5px 5px 5px 50px;
+	}
+
+	.prix1-3
+    {
+	    padding: 5px 0px 5px 0px;
+    }
+
+    .prix2-3
+    {
+	    padding: 5px 5px 5px 45px;
+    }
+
+    .prix3-3
+    {
+	    padding: 5px 5px 5px 210px; 
+    }
+
+	.prix1-4
+    {
+	    padding: 5px 0px 5px 100px; 
+    }
+
+    .prix2-4
+    {
+	    padding: 5px 0px 5px 30px;
+    }
+
+    .prix3-4
+    {
+	    padding: 5px 0px 5px 45px; 
+    }
 }
 
 @media all and (min-width: 992px)
@@ -259,7 +452,7 @@ footer
     .prix2
     {
 	    padding: 5px 5px 5px 110px;
-    }
+    }  
 }
 
 @media all and (min-width: 1200px)
@@ -268,4 +461,14 @@ footer
 	{
 		max-width: 800px;
 	}
+
+	.plats2
+    {
+	    margin: 25px 70px 50px 70px;
+    }
+
+    .plats3
+    {
+	    margin: 0px 70px 0px 70px;
+    }
 }
